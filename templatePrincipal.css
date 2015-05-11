@@ -1,0 +1,31 @@
+body
+{
+	background-color: #000000;
+	background-image: url("tableBackGround.jpg");
+	background-size: 900px 650px;
+	background-repeat: no-repeat;
+	background-position: 50% 15%;
+	opacity: 0.4;
+	color: white;
+	font-family: "Baskerville Old Face", Georgia, "Trebuchet MS", sans-serif;
+}
+
+.titre
+{
+	position: relative;
+	text-align: center;
+	
+}
+
+#fondEcran
+{
+	float: center;
+}
+
+.log 
+{
+	font-size: 10px;
+	position: absolute;
+	bottom: 0;
+	left: 17%;
+}
