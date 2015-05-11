@@ -8,41 +8,26 @@ body
 
 #logoCompagnie
 {	
-	width: 25%;
-	height: 20%;
-	position: absolute;
+	width: 40%;
+	height: 40%;
+	position: static;
 	top: 10px;
 	left: 0%;
-
-}
-
-#photoFond
-{	
-	width: 70%;
-	height: 100%;
-	position: absolute;
-	top:25%;
-	opacity: 0.7;
-	left:15%;
-	z-index: -1;
-
 }
 
 #menu
 {	
-	position: absolute;
+	font-size: 175%;
+	position: static;
 	left: 60%;
-	top: 20%;
+	top: 15%;
 	width: 500px;
-	
-
+	margin-left: 55%;
 }
 
 ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
-	
 }
 
 li
