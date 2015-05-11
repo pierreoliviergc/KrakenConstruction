@@ -16,17 +16,7 @@ body
 
 }
 
-#photoFond
-{	
-	width: 70%;
-	height: 100%;
-	position: absolute;
-	top:25%;
-	opacity: 0.7;
-	left:15%;
-	z-index: -1;
 
-}
 
 #menu
 {	
