@@ -8,9 +8,10 @@ body
 
 #logoCompagnie
 {	
-	width: 45%;
-	height: 45%;
+	width: 40%;
+	height: 40%;
 	position: relative;
+	margin-left: 50px;
 	top: 10px;
 	left: 0%;
 }
@@ -37,6 +38,7 @@ li
 p
 {
 	margin-top: 20px;
+	font-size: 125%;
 }
 
 a:link, a:visited {
@@ -57,8 +59,28 @@ footer
 {
 	background-color:#2D2D2D;
 	font-size: 90%;
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	bottom: 0%;
 	font-family: Georgia;
+}
+
+#adresse
+{
+	color: white;
+	margin-top: 150px;
+	margin-left: 20%;
+	margin-right: 20%;
+	font-size: 150%;
+	text-align: center;
+}
+
+#apropos
+{
+	color: white;
+	font-size: 125%;
+	margin-left: 20%;
+	margin-right: 20%;
+	text-align: justify;
+	white-space: pre-line;
 }
