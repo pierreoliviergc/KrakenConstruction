@@ -2,33 +2,40 @@
 
 <html>
 		<head>
+
 			<meta  charset=utf-8" http-equiv="Content-Type" />
 			<meta name="keywords" content="Mathieu Desbiens, construction, sur mesure, �b�niste, bois, �binisterie, meuble, banc, si�ge, table, biblioth�que, r�novation, Desbiens, kraken" />
 			
 			<!-- Latest compiled and minified CSS -->
-			<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+			<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"></script></link>
 			<!-- jQuery library -->
-			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"/>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"/></script>
 			<!-- Latest compiled JavaScript -->
 			<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 			
 			<link rel="stylesheet" href="menu.css" />
 			<title>Kraken construction</title>
 			
-			</script>
 		</head>
 
-	<body>
+	<body class="no-js">
 		<img src="krakenConstructionLogo.png" alt="logo compagnie" id="logoCompagnie"  />
 		<div>
 			<div id="menu">
 				<ul>
 					 <li><a href="acceuil.html">Accueil</a></li>
 					 <li><a href="apropos.html">A propos</a></li>
-					 <li><a href="#portfolio">Portfolio</a></li>
+					 <li><a href="">Portfolio</a>
+					 	<ul>
+					 	<li><a href="#" title="">teste</a></li>
+					 	<li><a href="#" title="">teste2</a></li>
+					 	<li><a href="#" title="">teste3</a></li>
+					 	</ul>
+					 </li>
 					 <li><a href="contact.html">Contact </a></li>
 				</ul>
 			</div>
+			
 			<div id="adresse">
 				<hr>
 				<h2>Pour me joindre:</h2>
@@ -47,7 +54,28 @@
 				<hr>
 			</div>
 		</div>
+		
+		<!-- Initialisation de la fonction -->
+		<script>
+			var el = document.getElementsByTagName("body")[0];
+			el.className = "";
+			
+			(function($){
+				var nav = $("#menu");
+				nav.find("li").each(function() {
+					if ($(this).find("ul").length > 0) {
+						$("<span>").text("").appendTo($(this).children(":first"));
+						$(this).mouseenter(function() {
+						$(this).find("ul").stop(true, true).slideDown();});
+						$(this).mouseleave(function() {
+						$(this).find("ul").stop(true, true).slideUp();});
+					}
+				});
+			})(jQuery);
+		</script>
 	</body>
+	
+
 	<footer>
 		Copyright &copy Kraken Construction | dev by teamRocket.   
 	</footer>

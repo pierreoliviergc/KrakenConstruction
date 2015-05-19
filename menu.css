@@ -20,7 +20,7 @@ body
 {	
 	font-size: 175%;
 	position: relative;
-	left: 55%;
+	margin-left: 40%;
 	width: 500px;
 }
 
@@ -30,9 +30,16 @@ ul {
     padding: 0;
 }
 
+ul ul 
+{
+	 display:none; width:100%; position:absolute; left:0; background:#6a6a6a; 
+
+}
+
 li
 {
   display: inline; 
+  position:relative; list-style-type:none;
 }
 
 p
@@ -83,4 +90,11 @@ footer
 	margin-right: 20%;
 	text-align: justify;
 	white-space: pre-line;
+}
+
+.dropdown-menu
+{
+	background: none;
+	color: white;
+	position: absolute;
 }
